@@ -77,54 +77,54 @@ Verificar ejecutando *python -V*.
 
 #### 2. Instalar virtualenv
 Instalar virtualenv que permitirá manejar un ambiente para la aplicación, con sus dependencias específicas y sin modificar la del sistema.
-    ```
+
     pip install virtualenv
-    ```
+
 
 #### 3. Clonar repo y crear ambiente virtual *venv*
 Clonar con git y en el directorio del repo crear el ambiente virtual (es importante que se llame *venv* para que no se suban los archivos al repo ya que esta ruta está agregada al .gitignore).
-    ```
+
     git clone https://<ruta del repo>.git
     cd prueba_front
     virtualenv venv
-    ```
+
 
 #### 4. Activar ambiente virtual 
 (referencia: https://virtualenv.pypa.io/en/stable/userguide/#activate-script)
 En linux (o sistema Posix):
-    ```
+
     $ source venv/bin/activate
-    ```
+
 En windows, se debe primero cambiar las políticas de ejecución de scripts. Desde powershell:
-    ```
+
     PS > Set-ExecutionPolicy RemoteSigned
-    ```
+
 y luego ejecutar:
-    ```
+
     PS > .\venv\Scripts\activate
-    ```
+
 
 #### 5. Instalación de dependencias
 La shell habrá cambiado a (venv) para notar que se está trabajando sobre el ambiente virtual. Ejecutar:
-    ```
+
     (venv) > pip install -r requirements.txt
-    ```
+
 
 #### 6. Creación de Base de Datos
 Siempre manteniendose dentro de *venv*, para generar una BD SQLite (db.sqlite) para desarrollo, ejecutar:
-    ```
+
     (venv) > python prueba_front.py create_data
-    ```
+
 
 #### 7. Ejecutar la aplicación
 Para ejecutar la aplicación web, en localhost y puerto 5000:
-    ```
+
     (venv) > python prueba_front.py runserver --host 127.0.0.1 --port 5000 --debug --reload
-    ```
+
 Para detener la aplicación presionar CTRL-C. Para salir del ambiente virtual ejecutar deactivate:
-    ```
+
     (venv) > deactivate
     PS >
-    ```
+
 
 Esta prueba está basada en el ejemplo: https://github.com/miguelgrinberg/REST-auth de Miguel Grinberg publicado bajo licencia MIT
