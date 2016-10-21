@@ -4,7 +4,7 @@ prueba_front
 Descripción
 -----------
 
-Pequeña aplicación en Flask para probar habilidades de desarrollador front
+Pequeña aplicación en Flask para demostrar habilidades de desarrollador front
 
 El objetivo es construir una interfaz de usuario consistente en 2 pantallas:
 
@@ -18,6 +18,8 @@ El objetivo es construir una interfaz de usuario consistente en 2 pantallas:
     * Utilizando el elemento checkbox, se debe poder filtrar aquellos tickets que están asignados al usuario de la sesión actual.
     * Al seleccionar una opción se debe mostrar la descripción del ticket en el elemento de texto. 
 
+Pantallas Login y Tickets
+-------------------------
 ![Alt](/wireframes.png "Wireframes")
 
 Implementación
@@ -105,23 +107,23 @@ y luego ejecutar:
 #### 5. Instalación de dependencias
 La shell habrá cambiado a (venv) para notar que se está trabajando sobre el ambiente virtual. Ejecutar:
     ```
-    (venv) PS > pip install -r .\requirements.txt
+    (venv) > pip install -r requirements.txt
     ```
 
 #### 6. Creación de Base de Datos
 Siempre manteniendose dentro de *venv*, para generar una BD SQLite (db.sqlite) para desarrollo, ejecutar:
     ```
-    (venv) PS > python .\prueba_front.py create_data
+    (venv) > python prueba_front.py create_data
     ```
 
 #### 7. Ejecutar la aplicación
 Para ejecutar la aplicación web, en localhost y puerto 5000:
     ```
-    (venv) PS > python .\prueba_front.py runserver --host 127.0.0.1 --port 5000 --debug --reload
+    (venv) > python prueba_front.py runserver --host 127.0.0.1 --port 5000 --debug --reload
     ```
 Para detener la aplicación presionar CTRL-C. Para salir del ambiente virtual ejecutar deactivate:
     ```
-    (venv) PS > deactivate
+    (venv) > deactivate
     PS >
     ```
 
