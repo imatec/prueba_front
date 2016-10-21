@@ -16,7 +16,7 @@ El objetivo es construir una interfaz de usuario consistente en 2 pantallas:
     * Utilizando el token se debe poder consultar el listado de tickets o cualquier recurso disponible por la API
     * El nombre de los tickets debe aparecer en el elemento select.
     * Utilizando el elemento checkbox, se debe poder filtrar aquellos tickets que están asignados al usuario de la sesión actual.
-    * Al seleccionar una opción se debe mostrar la descripción del ticket en el elemento de texto. 
+    * Al seleccionar una opción en el select, se debe mostrar la descripción del ticket seleccionado en el elemento de texto de abajo. 
 
 Pantallas Login y Tickets
 -------------------------
